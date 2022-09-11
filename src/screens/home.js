@@ -32,7 +32,7 @@ const MainScreen = () => {
         <div
           className="IconText"
           style={{
-            backgroundColor: selectedItem === index && " rgba(0, 0, 0, 0.4)",
+            backgroundColor: selectedItem === index && " rgba(0, 0, 0, 0.4) ",
           }}
         >
           <div>{ListIcon[index]}</div>

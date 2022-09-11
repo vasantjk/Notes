@@ -1,21 +1,11 @@
 import React from "react";
-
+import "./style.css";
 const Card = () => {
   return (
-    <div
-      style={{
-        boxShadow: "1px 1px 2px grey",
-        borderRadius: "5px",
-        width: "100%",
-        height: "300px",
-        textOverflow: "ellipsis",
-        whiteSpace: "nowrap",
-        overflow: "hidden",
-        padding: "10px",
-      }}
-    >
-      <h2>Heading</h2>
-      <pre>
+    <div className="CardStyle">
+      <h2 style={{ textAlign: "center", margin: "5px 0" }}>Heading</h2>
+      <span style={{ fontSize: "15px", fontWeight: 500 }}>Description :</span>
+      {/* <pre>
         <code>
           {`(class GFG
         {
@@ -28,7 +18,7 @@ const Card = () => {
         }
                   })`}
         </code>
-      </pre>
+      </pre> */}
     </div>
   );
 };

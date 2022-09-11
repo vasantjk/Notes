@@ -44,15 +44,38 @@
 }
 .ResCard {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, 200px);
+  grid-gap: 20px 40px;
   align-items: start;
 }
-
+.ToolTip {
+  width: 120px;
+  background-color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 110%;
+}
+.ToolTip:hover {
+  visibility: visible;
+}
+.ToolTip ::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
 @media screen and (max-width: 900px) {
   .ResCard {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 20px 40px;
     grid-template-columns: auto;
     align-items: start;
   }
