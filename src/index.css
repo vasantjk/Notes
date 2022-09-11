@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: "Sofia", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Sofia", sans-serif;
+}
